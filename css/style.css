@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+/*
+    font-family: "Open Sans", sans-serif;
+*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --container-width: 1170px;
+
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --orange-color: #FD6E0A;
+    --extra-light-orange: #FFF8F3;
+    --dark-color-one: #181818;
+    --dark-color-two: #474747;
+    --dark-color-three: #757575;
+}
+
+.container{
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 85px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dark-color-one);
+}
+
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--dark-color-two);
+}
+
+h3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dark-color-one);
+}
+
+h4{
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dark-color-two);
+}
+h5{
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dark-color-two);
+}
+
+h6{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dark-color-one);
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    color: var(--dark-color-three);
+}
+.btn{
+    background: var(--orange-color);
+    min-width: 150px;
+    height: 64px;
+    padding: 20px 18px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+/* Header and Banner Section */
+
+.header--banner-section{
+    background: var(--extra-light-orange);
+    min-height: 837px;
+    position: relative;
+    background-image: url('./../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom right;
+}
+
+.header--banner-section .developer--text{
+    position: absolute;
+    top: 806px;
+    left: 24px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+}
+.header--banner-section .developer--text span{
+    font-family: "Open Sans", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 33px;    
+    color: var(--dark-color-one);
+    opacity: 0.1;
+}
+.header--banner-section .developer--image{
+    display: inline-flex;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+}
+.header--section{
+    padding-top: 50px;
+}
+.header--section .header--logo-menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header--logo-menu-wrapper .header--logo a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--dark-color-one);
+}
+.header--logo-menu-wrapper .header--logo a span{
+    color: var(--orange-color);
+}
+
+.navbar-toggler{
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.header--section .main--menu,
+.header--section .main--menu .main--menu-list{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header--section  .main--menu .main--menu-list{
+    list-style-type: none;
+}
+.main--menu .main--menu-list .main--menu-list-item .main--menu-list-item-link{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--dark-color-two);
+    transition: all 0.3s ease-in-out;
+}
+.main--menu .main--menu-list .main--menu-list-item:hover .main--menu-list-item-link{
+    color: var(--orange-color);
+}
+
+.banner--section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(837px - 114px);
+}
+
+.banner--content-row{
+    display: flex;
+    align-items: center;
+}
+.banner--content-row .banner--content-wrapper{
+    max-width: 585px;
+}
+.banner--content h1{
+    margin-bottom: 20px;
+}
+.banner--content p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.banner--content .download--cv-and-contact-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.download--cv-and-contact-btn .contact--btn{
+    background-color: var(--extra-light-orange);
+    color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    min-width: 160px;
+}
+
+/* Small Device */
+@media (max-width:767px) {
+    h1{
+        font-size: 45px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    
+    h3{
+        font-size: 35px;
+    }
+    
+    h4{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 25px;
+    }
+    
+    .header--banner-section{
+        min-height: 650px;
+        background-position: bottom center;
+        background-size: 100% auto;
+    }
+    .header--section{
+        padding-top: 24px;
+    }
+    .header--logo-menu-wrapper .header--logo a{
+        font-size: 36px;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .header--section .header--menu{
+        transition: height 0.3s ease-in-out;
+    }
+    .header--section .header--menu .main--menu{
+        position: absolute;
+        top: 75px;
+        left: 0;
+        background: var(--extra-light-orange);
+        width: 100%;
+        max-height: 0;
+        padding: 0 15px;
+        transition: max-height 0.2s ease-in-out;
+        overflow: hidden;
+        z-index: 5;
+    }
+    
+    .header--section .main--menu,
+    .header--section .main--menu .main--menu-list{
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .header--section .main--menu .main--menu-list{
+        padding-top: 25px;
+    }
+    .header--section .main--menu .hire--me-btn-wrapper{
+        padding-bottom: 25px;
+    }
+    .header--banner-section .developer--text{
+        top: 620px;
+        left: 0;
+    }
+    .header--banner-section .developer--text span{
+        font-size: 64px;
+        letter-spacing: 28px;
+    }
+    .header--banner-section .developer--image{
+        right: 20px;
+    }
+    .header--banner-section .developer--image img{
+        max-width: 320px;
+    }
+
+    .banner--content-row .banner--content-wrapper{
+        position: relative;
+        z-index: 1;
+    }
+
+    .banner--content p{
+        font-size: 16px;
+    }
+    .banner--content .download--cv-and-contact-btn{
+        flex-direction: column;
+    }
+    .banner--content .download--cv-and-contact-btn a{
+        min-width: 100%;
+    }
+    .banner--section{
+        min-height: calc(650px - 73px);
+    }
+}
+
+/* Laptop Device */
+@media (min-width:768px) {
+
+}
+
+/*Large Device*/
+
+@media (min-width:1200px) {
+    
+}
