@@ -242,7 +242,7 @@ p{
     }
     
     .header--banner-section{
-        min-height: 650px;
+        min-height: 720px;
         background-position: bottom center;
         background-size: 100% auto;
     }
@@ -260,7 +260,7 @@ p{
     }
     .header--section .header--menu .main--menu{
         position: absolute;
-        top: 75px;
+        top: 72px;
         left: 0;
         background: var(--extra-light-orange);
         width: 100%;
@@ -314,7 +314,7 @@ p{
         min-width: 100%;
     }
     .banner--section{
-        min-height: calc(650px - 73px);
+        min-height: calc(720px - 72px);
     }
 }
 
