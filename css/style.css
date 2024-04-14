@@ -198,6 +198,7 @@ p{
     align-items: center;
 }
 .banner--content-row .banner--content-wrapper{
+    position: relative;
     max-width: 585px;
 }
 .banner--content h1{
@@ -299,10 +300,6 @@ p{
         max-width: 320px;
     }
 
-    .banner--content-row .banner--content-wrapper{
-        position: relative;
-        z-index: 1;
-    }
 
     .banner--content p{
         font-size: 16px;
@@ -320,9 +317,33 @@ p{
 
 /* Laptop Device */
 @media (min-width:768px) {
-
+    h1{
+        font-size: 65px;
+    }
+    
+    h2{
+        font-size: 35px;
+    }
+    
+    h3{
+        font-size: 25px;
+    }
+    
+    h4{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    
+    .header--banner-section .developer--image img{
+        max-width: 450px;
+        z-index: 0;
+    }
+    .header--banner-section .developer--text{
+        left: 0;
+    }
 }
-
 /*Large Device*/
 
 @media (min-width:1200px) {
